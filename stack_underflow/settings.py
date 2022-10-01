@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-ebyf9vx8i*@%bg(ri7fkz!5e_(&hiy2r4iu8u=m@nky=w@pnbz
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
+    '*',
 ]
 
 
@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'stack_underflow.urls'
@@ -159,4 +160,6 @@ CKEDITOR_CONFIGS = {
 }
 
 TAGGIT_CASE_INSENSITIVE = True
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
