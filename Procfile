@@ -1,1 +1,0 @@
-web: gunicorn stack_underflow.wsgi --log-file -
