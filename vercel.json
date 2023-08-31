@@ -6,6 +6,6 @@
     }],
     "routes": [{
             "src": "/(.*)",
-            "dest": "/stack_underflow/wsgi.py"
+            "dest": "stack_underflow/wsgi.py"
     }]
 }
